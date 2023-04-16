@@ -1,0 +1,97 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+
+body{
+    background-color: rgb(22, 2, 36);
+}
+h1{
+    font-size: 55px;
+    color: white;
+}
+p{
+    color: white;
+}
+
+.question-name{
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.question-name h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.377);
+    font-size: 100px;
+}
+
+#arch{background-image: url('images/arch-liinux-4k-t0.jpg');}
+#debian{background-image: url('images/debian-linux-4k-ro.jpg');}
+#redhat{background-image: url('images/redhat.png');}
+
+.choice-grid{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    margin-bottom: 20px;
+    /*background-color: purple;*/
+    justify-content: space-between;
+}
+
+.choice-grid div.unselected{
+    opacity: 60%;
+}
+.choice-grid div.selected{
+    background-color: #cfe3ff;
+}
+
+.choice-grid div{
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    padding: 10px;
+    width: calc((100% / 3) - 10px);
+    border: 1px solid #dcdcdc;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+#result{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#restart{
+    text-align: center;
+    background-color: #cecece;
+    border-radius: 50px;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#restart:hover{
+    background-color: #e0e0e0;
+}
+
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    article{
+        width: 95%;
+    }
+    header div{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .choice-grid div{
+        width: 49%;
+    }
+}
